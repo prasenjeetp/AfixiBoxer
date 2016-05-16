@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_back"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="?arrowBackDrawable"
+        android:showAsAction="never"
+        android:title="@string/action_back"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/action_forward"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="?arrowForwardDrawable"
+        android:showAsAction="never"
+        android:title="@string/action_forward"
+        android:visible="true">
+    </item>
+    <item
+        android:id="@+id/action_new_tab"
+        android:showAsAction="never"
+        android:title="@string/action_new_tab">
+    </item>
+    <item
+        android:id="@+id/action_find"
+        android:showAsAction="never"
+        android:title="@string/action_find">
+    </item>
+    <item
+        android:id="@+id/action_history"
+        android:showAsAction="never"
+        android:title="@string/action_history">
+    </item>
+    <item
+        android:id="@+id/action_bookmarks"
+        android:showAsAction="never"
+        android:title="@string/action_bookmarks">
+    </item>
+
+</menu>

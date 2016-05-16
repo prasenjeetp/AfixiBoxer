@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+        android:background="#ffffff"
+     >
+
+    <ImageView
+        android:id="@+id/imageView_exitApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/exit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageView_exitApp"
+        android:text="Exit"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/dialog_ViewLineExitApp"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView_Settings"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="#fd0006" />
+
+    <TextView
+        android:id="@+id/textView_confrom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_ViewLineExitApp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Are you sure ?"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView_confrom" 
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button_exitNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_exitYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

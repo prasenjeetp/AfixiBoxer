@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_Feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/Feedback"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/dialog_ViewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#ff0000" />
+
+    <EditText
+        android:id="@+id/editText_AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:enabled="true"
+        android:hint="@string/Subject"
+        android:singleLine="true"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editText_UserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/YourMailidhere"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_writeFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:hint="@string/Yourfeedbackhere"
+        android:maxLines="4"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/button_submitFeedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_border"
+        android:layout_marginBottom="05dp"
+        android:layout_marginTop="20dp"
+       android:padding="10dp"
+        android:text="@string/Submit"
+        android:textColor="#000000" />
+
+    <View
+        android:id="@+id/dialog_ViewLine2"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/button_submitFeedBack"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff" />
+
+</LinearLayout>

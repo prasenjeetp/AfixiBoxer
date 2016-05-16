@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llHomeSearch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="7dp"
+        android:background="@drawable/search_box_hompage"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <EditText
+            android:id="@+id/edtSearchAtHomepage"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical|fill_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="5.2"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="Search Internet"
+            android:inputType="textUri"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/ivBtnSearch"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|fill_horizontal"
+            android:layout_weight=".8"
+            android:gravity="center"
+            android:src="@drawable/search_homepage" />
+    </LinearLayout>
+
+</RelativeLayout>

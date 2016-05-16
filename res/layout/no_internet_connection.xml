@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoInternetConnection" >
+
+
+    
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#dddddd" >
+
+<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/app_strip" />
+
+      
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000"
+        />
+    <RelativeLayout 
+        android:id="@+id/rr_NoInternet"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar"
+        android:background="#f2f2f2">
+       
+        <ImageView 
+            android:id="@+id/imageView_noConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_antenna_broken"
+            
+            />
+        
+        <TextView 
+            android:id="@+id/textView_NoConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sorry, No Internet Connection"
+            android:textSize="20sp"
+            android:textColor="#a5a5a5"
+            android:layout_below="@+id/imageView_noConnection"
+            android:layout_centerHorizontal="true"
+            />
+       </RelativeLayout>
+ <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/rr_NoInternet" 
+        android:background="#000000"
+        />
+</RelativeLayout>

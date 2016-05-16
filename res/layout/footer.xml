@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+  <LinearLayout
+        android:id="@+id/progressWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+        android:background="#f3f3f3"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/activity_bar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:maxHeight="4dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/progress" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="5" >
+
+        <ImageView
+            android:id="@+id/imageView_BackwardIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/back_icon" />
+
+        <ImageView
+            android:id="@+id/imageView_ForWardIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:src="@drawable/next_icon" />
+
+        <ImageView
+            android:id="@+id/imageView_Home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:src="@drawable/home_selector" />
+
+        <ImageView
+            android:id="@+id/ivTabIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@drawable/tabs_selector" />
+
+        <ImageView
+            android:id="@+id/settingIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:src="@drawable/setting_selector" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,298 @@
+<!-- Copyright 2014 ACR Development -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/includeLayOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            layout="@layout/footer" />
+    </RelativeLayout>
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/progressWrapper" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+        
+<!--         android:background="#f3f3f3" -->
+<!--         android:orientation="vertical" > -->
+
+<!--         <ProgressBar -->
+<!--             android:id="@+id/activity_bar" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="5dp" -->
+<!--             android:indeterminate="false" -->
+<!--             android:indeterminateOnly="false" -->
+<!--             android:maxHeight="4dp" -->
+<!--             android:minHeight="2dp" -->
+<!--             android:progressDrawable="@drawable/progress" /> -->
+<!--     </LinearLayout> -->
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" >
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/includeLayOut" />
+
+        <RelativeLayout
+            android:id="@+id/drawer"
+            android:layout_width="@dimen/navigation_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/drawer_background"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/new_tab_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/list_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/plusIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="Favicon"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:src="@drawable/ic_action_plus" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toLeftOf="@+id/plusIcon"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                    android:text="@string/action_new_tab"
+                    android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/new_tab_button"
+                android:background="@color/gray_list_bg" />
+
+            <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lineView"
+                android:layout_below="@+id/view"
+                android:choiceMode="singleChoice"
+                android:dividerHeight="1dp"
+                android:listSelector="@drawable/list_bg" />
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/linearLayout1"
+                android:background="@color/gray_list_bg"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <RelativeLayout
+                    android:id="@+id/action_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_bg"
+                    android:clickable="true"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/action_back"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/ic_action_back"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/action_forward"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/list_bg"
+                    android:clickable="true"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/action_forward"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/ic_action_forward"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/right_drawer"
+            android:layout_width="@dimen/navigation_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/drawer_background"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvAddBookMarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_bg"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:padding="10dp"
+                        android:text="@string/Add_BookMark"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_list_bg" />
+
+                    <TextView
+                        android:id="@+id/tvHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_bg"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:padding="10dp"
+                        android:text="@string/History"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_list_bg" />
+
+                    <TextView
+                        android:id="@+id/tvCopyLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_bg"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:padding="10dp"
+                        android:text="@string/Copy_Link"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_list_bg" />
+
+                    <TextView
+                        android:id="@+id/tvFindInPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_bg"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:padding="10dp"
+                        android:text="@string/Find_In_Page"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_list_bg" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_bg"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:padding="10dp"
+                        android:text="@string/BookMarks"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/gray_list_bg" />
+
+                    <ListView
+                        android:id="@+id/right_drawer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:divider="#bababa"
+                        android:dividerHeight="1dp"
+                        android:listSelector="@drawable/list_bg"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

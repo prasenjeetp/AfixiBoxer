@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings" 
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"/>
+    
+    <View 
+          android:id="@+id/dialog_ViewLine1"
+          android:layout_width="250dp"
+          android:layout_height="1dp"
+          android:layout_marginTop="20dp"
+           android:layout_marginLeft="25dp"
+          android:layout_below="@+id/textView_Settings"
+		  android:background="#fd0006"/>
+    
+    <CheckBox
+			android:id="@+id/checkBox_dialog"
+			android:button="@drawable/check_box"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+		    android:checked="true"
+		    android:textSize="18sp"
+		    android:text="Notification"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/dialog_ViewLine1"/>
+    <View 
+          android:id="@+id/dialog_ViewLine2"
+          android:layout_width="235dp"
+          android:layout_height="1dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="30dp"
+          android:layout_below="@+id/checkBox_dialog"
+		  android:background="#bdbdbd"/>
+
+   <TextView
+        android:id="@+id/textView_Help"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Help" 
+         android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/dialog_ViewLine2"
+        android:textSize="18sp"/>
+        
+   <View 
+          android:id="@+id/dialog_ViewLine3"
+          android:layout_width="235dp"
+          android:layout_height="1dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="30dp"
+          android:layout_below="@+id/textView_Help"
+		  android:background="#bdbdbd"/>
+   
+   <TextView
+        android:id="@+id/textView_About"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="About"
+        android:layout_marginTop="20dp" 
+        android:textColor="#000000"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/dialog_ViewLine3"
+        android:textSize="18sp"/>
+        
+   <View 
+          android:id="@+id/dialog_ViewLine4"
+          android:layout_width="235dp"
+          android:layout_height="1dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="30dp"
+          android:layout_below="@+id/textView_About"
+		  android:background="#bdbdbd"/>
+   
+   <TextView
+        android:id="@+id/textView_License"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="License"
+        android:layout_marginTop="20dp" 
+        android:textColor="#000000"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/dialog_ViewLine4"
+        android:textSize="18sp"/>
+        
+   <View 
+          android:id="@+id/dialog_ViewLine5"
+          android:layout_width="235dp"
+          android:layout_height="1dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="30dp"
+          android:layout_below="@+id/textView_License"
+		  android:background="#bdbdbd"/>
+   
+    <TextView
+        android:id="@+id/textView_Feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Feedback"
+        android:layout_marginTop="20dp" 
+        android:textColor="#000000"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/dialog_ViewLine5"
+        android:textSize="18sp"/>
+        
+   <View 
+          android:id="@+id/dialog_ViewLine6"
+          android:layout_width="235dp"
+          android:layout_height="1dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginLeft="30dp"
+          android:layout_below="@+id/textView_Feedback"
+		  android:background="#bdbdbd"/>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".WebActivity" >
+    
+    
+   
+    
+    
+    <LinearLayout 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight=".9">
+      
+       <ProgressBar 
+           android:layout_width="fill_parent"
+           android:layout_height="7dip"
+           style="?android:attr/progressBarStyleHorizontal"
+           android:progress="1"
+           android:id="@+id/progressH"/>
+    
+    
+    
+    
+    <WebView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webviewSearch"/>
+    
+    
+    
+   
+    </LinearLayout>
+    
+                  
+    
+    <!-- <LinearLayout 
+        android:layout_height="55dp"
+        android:layout_width="fill_parent"
+        android:layout_weight=".1"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:background="#053D5A" >
+    
+        <ImageButton 
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+         
+            android:layout_weight="1"
+            android:id="@+id/refreshI"
+            android:background="@drawable/refresh"/>
+    
+       <ImageButton 
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:id="@+id/homeI"
+            android:layout_weight="1"
+            android:layout_marginLeft="75dp"
+          
+                    
+         
+            android:background="@drawable/home"/>
+       
+       <ImageButton 
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:id="@+id/extI"
+            android:layout_weight="1"
+            android:layout_marginLeft="75dp"
+            
+           
+            android:background="@drawable/exitb"/>
+
+</LinearLayout> -->
+</LinearLayout>
